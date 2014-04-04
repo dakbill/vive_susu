@@ -1,0 +1,122 @@
+{% extends 'layout/base.html' %}
+{% load staticfiles %}
+{% block head %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static "css/jquery-ui.css" %}" />
+
+
+{% endblock %}
+{% block content %}
+    <div id="chat-widget" class="container" title="Chat" style="display: none">
+        <div class="row">
+            <div class="col-lg-12">
+                <textarea id="msg-log" readonly="readonly" rows="13" class="form-control"></textarea>
+            </div>
+
+        </div>
+        <div class="row" style="margin-top: 30px">
+            <div class="col-lg-9">
+                <input type="text"  id="msg" class="form-control">
+            </div>
+            <div class="col-lg-2">
+                <button class="btn btn-primary" id="send-btn" type="button" onclick="send_message()">send</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <a href="{% url 'payment-system' %}" >
+                <div class="thumbnail col-lg-3">
+                    <img src="{% static "img/deposit.jpg" %}" >
+                    <div class="caption">
+                        Deposit
+                    </div>
+                </div>
+            </a>
+            <a href="{% url 'funds-balance' %}" >
+                <div class="thumbnail col-lg-3 col-lg-offset-1">
+                    <img src="{% static "img/balance.jpg" %}"  >
+                    <div class="caption">
+                        Balance
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <a href="{% url 'funds-notifications' %}" >
+                <div class="thumbnail col-lg-3">
+                    <img src="{% static "img/notifications.jpg" %}" >
+                    <div class="caption">
+                        View Notifications
+                    </div>
+                </div>
+            </a>
+
+                <div class="thumbnail col-lg-3 col-lg-offset-1" onclick="init_chat()">
+                    <img src="{% static "img/chat.jpg" %}" >
+                    <div class="caption">
+                        Chat with agent
+                    </div>
+                </div>
+        </div>
+
+    </div>
+
+{% endblock %}
+{% block scripts %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static "js/jquery-ui.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/autobahn.min.jgz" %}"></script>
+    <script type="text/javascript">
+        $('#msg').keyup(function(event){
+            if(event.keyCode == 13)
+            {
+                $('#send-btn').click();
+            }
+        });
+        var ws = new WebSocket('ws://localhost:1234', 'echo-protocol');
+        function init_chat()
+        {
+            $("#chat-widget").dialog({
+                height: 420,
+                resizable:false,
+                width:350,
+                position:{ at: "right bottom" },
+                beforeClose: function( event, ui ) {
+                }
+            });
+            var txt=document.createTextNode('connecting to an agent...\n');
+            var box = document.getElementById("msg-log");
+            box.appendChild(txt);
+        }
+        ws.onmessage = function (event) {
+            var json = JSON.parse(event.data);
+            var txt = document.createTextNode(json.agent + ':' + json.text + '\n');
+            var box = document.getElementById("msg-log");
+            box.appendChild(txt);
+
+
+        };
+        function send_message()
+        {
+
+            var msg = {type:'message',text:$('#msg').val(),date:Date.now(),username:'{{ username }}'};
+            $('#msg').val('');
+            var txt=document.createTextNode( msg.username+ ':' + msg.text + '\n');
+            var box = document.getElementById("msg-log");
+            if(box.innerHTML == 'connecting to an agent...\n')
+            {
+                box.innerHTML = '';
+            }
+            box.appendChild(txt);
+            ws.send(JSON.stringify(msg));
+            var text_area = document.getElementById('msg-log');
+            text_area.scrollTop = text_area.scrollHeight;
+        }
+    </script>
+
+
+{% endblock %}

@@ -1,0 +1,135 @@
+{% extends 'layout/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="modal fade" id="sms" tabindex="-1" role="dialog" aria-labelledby="smsLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="smsLabel">Send sms</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form" class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <input type="text" placeholder="Member(s)" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <input type="text" placeholder="Subject" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-7">
+                                <textarea class="form-control" rows="3" placeholder="Message"  ></textarea>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="email" tabindex="-1" role="dialog" aria-labelledby="emailLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="emailLabel">Send email</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form" class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <input type="text" placeholder="Member(s)" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <input type="text" placeholder="Subject" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <textarea class="form-control" rows="6" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="notification" tabindex="-1" role="dialog" aria-labelledby="noteLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="noteLabel">Send vive notification</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form" class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <input type="text" placeholder="Member(s)" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <input type="text" placeholder="Subject" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <textarea class="form-control" rows="6" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <a href="#" data-toggle="modal" data-target="#sms" >
+                <div class="thumbnail col-lg-2 col-lg-offset-2" >
+                    <img src="{% static "img/sms.png" %}" >
+                    <div class="caption" >
+                        Send SMS to member(s)
+                    </div>
+                </div>
+            </a>
+            <a href="#" data-toggle="modal" data-target="#email">
+                <div class="thumbnail col-lg-2 col-lg-offset-1">
+                    <img src="{% static "img/email.jpg" %}" >
+                    <div class="caption">
+                        Send Email to member(s)
+                    </div>
+                </div>
+            </a>
+            <a href="#" data-toggle="modal" data-target="#notification">
+                <div class="thumbnail col-lg-2 col-lg-offset-1">
+                    <img src="{% static "img/vive-notify.jpg" %}" >
+                    <div class="caption">
+                        Send Vive-notification to member(s)
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+{% endblock %}

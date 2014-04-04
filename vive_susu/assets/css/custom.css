@@ -1,0 +1,40 @@
+body
+{
+    background-color: rgba(139, 146, 143, 0.55);
+    color: #ebe1e3;
+    background-image: url("./images/bg.jpg");
+}
+
+
+
+section
+{
+    margin-top: 70px;
+}
+
+legend
+{
+    color: #ebe1e3;
+}
+
+.thumbnail img
+{
+    height: 150px;
+}
+
+.voucher
+{
+    height: 150px;
+}
+
+textarea{
+    resize: none;
+}
+
+
+footer{
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 85%;
+}
