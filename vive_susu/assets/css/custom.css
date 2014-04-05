@@ -34,7 +34,18 @@ textarea{
 
 footer{
     position: fixed;
-    height: 100px;
+    height: 65px;
     bottom: 0;
     width: 85%;
 }
+
+.breadcrumb{
+    background: transparent;
+}
+.breadcrumb a{
+    color: #f5d553;
+    font-size: 20px;
+    font-family: DejaVu Sans;
+    font-weight:  900;
+}
+

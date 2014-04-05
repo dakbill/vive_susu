@@ -16,7 +16,11 @@
 </head>
 <body class="container">
 <section class="row">
-
+    <ol class="breadcrumb pull-right" >
+        <li><a href="{% url 'funds-home' %}" class="active">Home</a></li>
+        <li><a href="{% url 'about-us' %}" >About</a></li>
+        <li><a href="{% url 'contact-us' %}" >Contact us</a></li>
+    </ol>
 </section>
 {%block content%}
 

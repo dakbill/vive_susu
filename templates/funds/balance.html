@@ -2,7 +2,27 @@
 
 {% block content %}
     <div class="row">
-        your account balance is {{ balance }}
+        <table class="table table-bordered">
+            <tr><td class="col-lg-2">Account name:</td><td>{{ member.name }}</td></tr>
+            <tr><td>Account number:</td><td>{{ member.account.acc_num }}</td></tr>
+            <tr><td>Balance brought forward:</td><td>{{ member.account.balance }}</td></tr>
+        </table>
+
+        <table class="table">
+            <thead>
+                <tr><td>Date</td><td>Deposit</td><td>Balance</td></tr>
+            </thead>
+        </table>
+        <div style="height: 200px;overflow-y: scroll">
+            <table class="table table-bordered">
+                <tbody>
+                <tr><td class="col-lg-3">foo/foo/bar</td><td>foo100</td><td>foo100</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p style="text-align: left" class="pull-right">Current account balance : {{ member.account.balance }}</p>
+
 
     </div>
 

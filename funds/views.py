@@ -84,8 +84,8 @@ def send_notifications(request):
 
 
 def balance(request):
-    balance = Member.objects.get(username=request.session['username']).account.balance
-    return render_to_response('funds/balance.html', {'balance': balance})
+    member = Member.objects.get(username=request.session['username'])
+    return render_to_response('funds/balance.html', {'member': member, 'title': 'balance'})
 
 
 def notifications(request):
@@ -98,3 +98,15 @@ def payment_system(request):
 
 def mobile_money_deposit(request):
     return render_to_response('funds/mobile_money_deposit.html')
+
+
+def stats(request):
+    return render_to_response('funds/admin/stats.html')
+
+
+def contact(request):
+    return render_to_response('contact.html')
+
+
+def about(request):
+    return render_to_response('about.html')

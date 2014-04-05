@@ -1,0 +1,44 @@
+{% extends 'layout/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-lg-2 well" style="height: 450px;color: #000000;overflow-y: scroll" >
+            <h4>Control panel</h4>
+            <hr>
+        </div>
+        <div id="graph" class="col-lg-10" style="height: 450px;">
+
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static "js/highstock.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/exporting.js" %}"></script>
+    <script type="text/javascript">
+        graph = {
+            rangeSelector : {
+                selected : 1
+            },
+
+            title : {
+                text : 'Title goes here'
+            },
+
+            series : [{
+                name : 'series name',
+                color: 'red',
+                data : [[0,0],[1,1],[2,2],[3,3],[4,4]],
+                tooltip: {
+                    valueDecimals: 2
+                }
+            }]
+
+        };
+        $('#graph').highcharts('StockChart', graph);
+    </script>
+
+
+{% endblock %}
