@@ -9,12 +9,16 @@ body
 
 section
 {
-    margin-top: 70px;
+    margin-top: 20px;
 }
 
 legend
 {
     color: #ebe1e3;
+}
+.well legend
+{
+    color: #000000;
 }
 
 .thumbnail img
@@ -33,10 +37,10 @@ textarea{
 
 
 footer{
-    position: fixed;
+    position: inherit;
     height: 65px;
     bottom: 0;
-    width: 85%;
+    width: 100%;
 }
 
 .breadcrumb{

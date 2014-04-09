@@ -4,12 +4,12 @@
     <list default="true" id="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" name="Default" comment="" />
     <ignored path="vive_susu.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/urls.py" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1396658445254" ignored="false" />
-    <file path="/views.py" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1396660294161" ignored="false" />
-    <file path="/settings.py" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1395471835156" ignored="false" />
+    <file path="/urls.py" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1396781120268" ignored="false" />
+    <file path="/views.py" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1396892817185" ignored="false" />
+    <file path="/settings.py" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1396779356308" ignored="false" />
     <file path="/login.html" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1396173874810" ignored="false" />
-    <file path="/base.html" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1396658557503" ignored="false" />
-    <file path="/models.py" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1394481688436" ignored="false" />
+    <file path="/base.html" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1396777143725" ignored="false" />
+    <file path="/models.py" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1396777684657" ignored="false" />
     <file path="/Django Console" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1377764044413" ignored="false" />
     <file path="/index.html" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1377806419660" ignored="false" />
     <file path="/styles.css" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1377800289441" ignored="false" />
@@ -17,24 +17,24 @@
     <file path="/a.py" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1377804182249" ignored="false" />
     <file path="/start_script.py" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1377804188012" ignored="false" />
     <file path="/whatsapp_xtract.py" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1377853431528" ignored="false" />
-    <file path="/home.html" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1394399845219" ignored="false" />
-    <file path="/deposit.html" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1396596601696" ignored="false" />
+    <file path="/home.html" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1396694776783" ignored="false" />
+    <file path="/deposit.html" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1396774691604" ignored="false" />
     <file path="/handler.py" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1394406861899" ignored="false" />
     <file path="C:/Python27/Lib/site-packages/django/conf/urls/__init__.py" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1394436319121" ignored="false" />
     <file path="/django_manage.py" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1394439429034" ignored="false" />
-    <file path="/dash.html" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1396645759849" ignored="false" />
-    <file path="/custom.css" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1396657817949" ignored="false" />
-    <file path="/vouchers.html" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1396596869431" ignored="false" />
+    <file path="/dash.html" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1396694452489" ignored="false" />
+    <file path="/custom.css" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1396775803576" ignored="false" />
+    <file path="/vouchers.html" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1396768571875" ignored="false" />
     <file path="/send_notifications.html" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1396177220766" ignored="false" />
-    <file path="/balance.html" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1396660218632" ignored="false" />
+    <file path="/balance.html" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1396779478737" ignored="false" />
     <file path="/chat.html" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1395253548699" ignored="false" />
     <file path="/notifications.html" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1394968227949" ignored="false" />
     <file path="/custom.js" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1395254258733" ignored="false" />
     <file path="/weekly_email.py" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1395476992390" ignored="false" />
     <file path="/timezone.py" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1395471439363" ignored="false" />
-    <file path="/payment_system.html" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1395490734984" ignored="false" />
+    <file path="/payment_system.html" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1396687547179" ignored="false" />
     <file path="/base_site.html" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1396183281313" ignored="false" />
-    <file path="/stats.html" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1396646661185" ignored="false" />
+    <file path="/stats.html" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1396784300990" ignored="false" />
     <file path="/contact.html" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1396658386814" ignored="false" />
     <file path="/about.html" changelist="7ccdbcfd-02cf-45ae-ada1-ecaef35f84aa" time="1396658482539" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,47 +53,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/layout/base.html">
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/funds/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="39" selection-start="704" selection-end="704" vertical-scroll-proportion="-0.65384614">
+            <state line="18" column="40" selection-start="853" selection-end="853" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="balance.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/funds/balance.html">
+      <file leaf-file-name="stats.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/funds/client/stats.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="39" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0">
+            <state line="22" column="28" selection-start="683" selection-end="683" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/funds/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="79" selection-start="2880" selection-end="2880" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dash.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/funds/client/dash.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="30" selection-start="3603" selection-end="3603" vertical-scroll-proportion="-20.153847">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="25" selection-end="25" vertical-scroll-proportion="0.056951422">
-              <folding />
+            <state line="184" column="8" selection-start="6157" selection-end="6157" vertical-scroll-proportion="7.802564">
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,22 +92,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/templates/funds/login.html" />
-        <option value="$PROJECT_DIR$/templates/funds/admin/send_notifications.html" />
-        <option value="$PROJECT_DIR$/templates/admin/base_site.html" />
-        <option value="$PROJECT_DIR$/templates/funds/deposit.html" />
-        <option value="$PROJECT_DIR$/templates/funds/admin/vouchers.html" />
-        <option value="$PROJECT_DIR$/templates/funds/admin/dash.html" />
-        <option value="$PROJECT_DIR$/templates/funds/admin/stats.html" />
-        <option value="$PROJECT_DIR$/vive_susu/assets/css/custom.css" />
-        <option value="$PROJECT_DIR$/templates/contact.html" />
-        <option value="$PROJECT_DIR$/funds/urls.py" />
-        <option value="$PROJECT_DIR$/templates/about.html" />
-        <option value="$PROJECT_DIR$/templates/layout/base.html" />
-        <option value="$PROJECT_DIR$/templates/funds/balance.html" />
-        <option value="$PROJECT_DIR$/funds/views.py" />
-        <option value="$PROJECT_DIR$/templates/funds/client/dash.html" />
         <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/templates/funds/payment_system.html" />
+        <option value="$PROJECT_DIR$/templates/funds/client/dash.html" />
+        <option value="$PROJECT_DIR$/templates/funds/login.html" />
+        <option value="$PROJECT_DIR$/templates/funds/home.html" />
+        <option value="$PROJECT_DIR$/templates/funds/admin/vouchers.html" />
+        <option value="$PROJECT_DIR$/templates/funds/deposit.html" />
+        <option value="$PROJECT_DIR$/vive_susu/assets/css/custom.css" />
+        <option value="$PROJECT_DIR$/templates/layout/base.html" />
+        <option value="$PROJECT_DIR$/funds/models.py" />
+        <option value="$PROJECT_DIR$/vive_susu/settings.py" />
+        <option value="$PROJECT_DIR$/templates/funds/balance.html" />
+        <option value="$PROJECT_DIR$/funds/urls.py" />
+        <option value="$PROJECT_DIR$/templates/funds/admin/stats.html" />
+        <option value="$PROJECT_DIR$/templates/funds/client/stats.html" />
+        <option value="$PROJECT_DIR$/funds/views.py" />
       </list>
     </option>
   </component>
@@ -199,6 +183,88 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vive_susu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vive_susu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vive_susu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vive_susu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vive_susu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vive_susu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vive_susu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="funds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vive_susu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vive_susu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="funds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vive_susu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vive_susu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="funds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -231,10 +297,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\dakbill\PycharmProjects\vive_susu\vive_susu\assets\js" />
+      <recent name="C:\Users\dakbill\PycharmProjects\vive_susu\templates\funds\client" />
+      <recent name="C:\Users\dakbill\PycharmProjects\vive_susu\vive_susu\assets\img" />
       <recent name="C:\Users\dakbill\PycharmProjects\vive_susu\templates\funds\admin" />
       <recent name="C:\Users\dakbill\PycharmProjects\vive_susu\vive_susu\assets\css\images" />
-      <recent name="C:\Users\dakbill\PycharmProjects\vive_susu\vive_susu\assets\img" />
-      <recent name="C:\Users\dakbill\PycharmProjects\vive_susu\templates\funds" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\dakbill\PycharmProjects\vive_susu\templates\funds\admin" />
@@ -379,14 +445,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="0" width="1378" height="780" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45516717" sideWeight="0.6886035" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.49392098" sideWeight="0.6886035" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -457,116 +523,93 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/funds/deposit.html">
+    <entry file="file://$PROJECT_DIR$/templates/funds/admin/dash.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="71" selection-start="1311" selection-end="1311" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="57" column="16" selection-start="1761" selection-end="2043" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/funds/client/dash.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="36" selection-start="1565" selection-end="1565" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/funds/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="20" selection-start="74" selection-end="74" vertical-scroll-proportion="-0.65384614" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/funds/admin/vouchers.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="14" selection-start="452" selection-end="452" vertical-scroll-proportion="-6.5384617">
-          <folding />
-        </state>
+        <state line="5" column="132" selection-start="299" selection-end="299" vertical-scroll-proportion="-3.2692308" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/funds/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="105" selection-start="1180" selection-end="1180" vertical-scroll-proportion="0.48207885">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/funds/payment_system.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="3" selection-start="191" selection-end="191" vertical-scroll-proportion="0.17863397">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/funds/admin/dash.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="33" selection-start="1783" selection-end="1783" vertical-scroll-proportion="-5.8846154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vive_susu/assets/js/highstock.js">
+    <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/funds/admin/stats.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="35" selection-start="609" selection-end="609" vertical-scroll-proportion="-12.423077">
-          <folding>
-            <element signature="e#134#189#0" expanded="false" />
-            <element signature="e#301#323#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vive_susu/assets/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0" />
+        <state line="39" column="22" selection-start="365" selection-end="365" vertical-scroll-proportion="0.7890819" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/contact.html">
+    <entry file="file://$PROJECT_DIR$/templates/funds/deposit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="41" selection-start="0" selection-end="1902" vertical-scroll-proportion="-6.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="25" selection-start="124" selection-end="124" vertical-scroll-proportion="-3.2692308">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/funds/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="59" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#30#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="32" column="0" selection-start="1555" selection-end="1555" vertical-scroll-proportion="0.09018568" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/layout/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="39" selection-start="704" selection-end="704" vertical-scroll-proportion="-0.65384614">
+        <state line="19" column="10" selection-start="670" selection-end="670" vertical-scroll-proportion="0.5796703" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/funds/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="33" selection-start="316" selection-end="316" vertical-scroll-proportion="0.30512822" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vive_susu/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="127" column="28" selection-start="4377" selection-end="4377" vertical-scroll-proportion="0.47948718">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/funds/balance.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="39" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0">
+        <state line="27" column="121" selection-start="1314" selection-end="1314" vertical-scroll-proportion="0.851312" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vive_susu/assets/js/exporting.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/funds/admin/stats.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="13" selection-start="578" selection-end="905" vertical-scroll-proportion="0.59416443" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/funds/client/stats.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="28" selection-start="683" selection-end="683" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/funds/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="40" selection-start="853" selection-end="853" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/funds/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="79" selection-start="2880" selection-end="2880" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/funds/client/dash.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="30" selection-start="3603" selection-end="3603" vertical-scroll-proportion="-20.153847">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="25" selection-end="25" vertical-scroll-proportion="0.056951422">
-          <folding />
+        <state line="184" column="8" selection-start="6157" selection-end="6157" vertical-scroll-proportion="7.802564">
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

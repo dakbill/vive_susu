@@ -5,8 +5,8 @@
 <head>
     {% block head %}
         <meta charset="utf-8">
-        <meta content="" name="description">
-        <meta content="" name="author">
+        <meta content="susu" name="description">
+        <meta content="vive" name="author">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}" />
         <link rel="stylesheet" href="{% static "css/custom.css" %}" />
@@ -16,11 +16,16 @@
 </head>
 <body class="container">
 <section class="row">
-    <ol class="breadcrumb pull-right" >
-        <li><a href="{% url 'funds-home' %}" class="active">Home</a></li>
-        <li><a href="{% url 'about-us' %}" >About</a></li>
-        <li><a href="{% url 'contact-us' %}" >Contact us</a></li>
-    </ol>
+    <div class="col-lg-6">
+    </div>
+    <div class="col-lg-6">
+        <ol class="breadcrumb pull-right" >
+            <li><a href="{% url 'funds-home' %}" class="active">Home</a></li>
+            <li><a href="{% url 'about-us' %}" >About</a></li>
+            <li><a href="{% url 'contact-us' %}" >Contact us</a></li>
+        </ol>
+    </div>
+
 </section>
 {%block content%}
 

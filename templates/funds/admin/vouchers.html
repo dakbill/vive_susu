@@ -1,11 +1,14 @@
 {% extends 'layout/base.html' %}
 
 {% block content %}
-    <div style="overflow-y: scroll;height: 450px;">
+    <div style="background-color: #ffffff;overflow-y: scroll;height: 450px;">
     {% for voucher in vouchers  %}
-        <div class="thumbnail col-lg-3  voucher {% if i != 1 or not i|divisibleby:4 %} col-lg-offset-1{% endif %}" >
+        <div style="border: solid #000000" class="thumbnail col-lg-3  voucher {% if i != 1 or not i|divisibleby:4 %} col-lg-offset-1{% endif %}" >
             <p style="color:#000000;text-align: center;margin-top: 40px;font-family: tahoma,monospace;font-size: 30px">{{ voucher }}</p>
         </div>
     {% endfor %}
+    </div>
+    <div class="row">
+    <button class="btn btn-primary pull-right" style="margin-top: 10px">PRINT</button>
     </div>
 {% endblock %}

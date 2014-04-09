@@ -26,8 +26,37 @@
                     </div>
                 </fieldset>
             </form>
+
+        </div>
+        <div class="col-lg-4">
+            <div  style="margin-top: 50px" id = "msgs">
+
+            </div>
         </div>
 
     </div>
 
+{% endblock %}
+
+{% block scripts %}
+    {{ block.super }}
+    <script type="text/javascript">
+        $(document).ready(
+                function()
+                {
+                    {% if error == 'true' %}
+                    $('#msgs').toggleClass('alert alert-warning');
+
+                    $('#msgs').html('{{ error_message}}');
+                    setTimeout(function()
+                            {
+                                $('#msgs').html('');
+                                $('#msgs').toggleClass('alert alert-warning')
+                            }
+                            ,20000);
+                    {% endif %}
+                }
+        );
+
+    </script>
 {% endblock %}

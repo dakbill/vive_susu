@@ -5,6 +5,7 @@ from django.shortcuts import redirect
 from django.template import loader, Context
 from funds.models import Member, Account, Voucher
 #from django.core.mail import send_mail
+import json
 
 
 def home(request):
@@ -13,20 +14,45 @@ def home(request):
 
 @csrf_exempt
 def voucher_deposit(request):
+    import datetime
+
+    error = 'false'
+    msg = None
     if request.POST:
         try:
             a = Account.objects.get(acc_num=str(request.POST['acc-no']))
-            for voucher in request.POST['vouchers'].split(","):
-                v = Voucher.objects.get(num=str(voucher).strip())
-                if not v.used:
-                    v.account = a
-                    a.balance += v.value
-                    v.used = True
+            vouchers_unprocessed = request.POST['vouchers'].split(",")
+            vouchers_processed = []
+            vouchers_used = []
+            for voucher in vouchers_unprocessed:
+                vouchers_processed.append(str(voucher).strip())
+            vouchers = Voucher.objects.filter(num__in=vouchers_processed)
+            for voucher in vouchers:
+                vouchers_processed.remove(str(voucher.num))
+                if not voucher.used:
+                    voucher.account = a
+                    a.balance += voucher.value
+                    voucher.used = True
+                    voucher.date_used = datetime.date.today()
                     a.save()
-                    v.save()
-        except Exception:
+                    voucher.save()
+                else:
+                    vouchers_used.append(str(voucher.num))
+            if vouchers_processed or vouchers_used:
+                error = 'true'
+                msg = ''
+                if vouchers_processed and vouchers_used:
+                    msg += '<p>These vouchers were wrong ' + ','.join(vouchers_processed) + '</p>'
+                    msg += '<p>These vouchers were used ' + ','.join(vouchers_used) + '</p>'
+                elif vouchers_used:
+                    msg += '<p>These vouchers were used ' + ','.join(vouchers_used) + '</p>'
+                else:
+                    msg += '<p>These vouchers were wrong ' + ','.join(vouchers_processed) + '</p>'
+                print msg
+        except Exception, e:
+            print e.args[0]
             pass
-    return render_to_response('funds/deposit.html', {'title': 'deposit'})
+    return render_to_response('funds/deposit.html', {'title': 'deposit', 'error': error, 'error_message': msg})
 
 
 @csrf_exempt
@@ -43,7 +69,7 @@ def login(request):
 
         except Exception:
             pass
-    return render_to_response('funds/login.html', {'title': 'login'})
+    return render_to_response('funds/home.html', {'title': 'home'})
 
 
 def admin_dash(request):
@@ -85,7 +111,23 @@ def send_notifications(request):
 
 def balance(request):
     member = Member.objects.get(username=request.session['username'])
-    return render_to_response('funds/balance.html', {'member': member, 'title': 'balance'})
+    month_total = 0
+    import datetime
+
+    month_vouchers = Voucher.objects.filter(date_used__month=datetime.date.today().month)
+    for mv in month_vouchers:
+        month_total += mv.value
+    last_month_savings = member.account.balance - month_total
+    increments = []
+    val = last_month_savings
+    for mv in month_vouchers:
+        val += mv.value
+        increments.append(val)
+
+    return render_to_response('funds/balance.html',
+                              {'member': member, 'title': 'balance',
+                               'month_vouchers_and_increments': zip(month_vouchers, increments),
+                               'last_month_savings': last_month_savings, 'balance': member.account.balance})
 
 
 def notifications(request):
@@ -110,3 +152,44 @@ def contact(request):
 
 def about(request):
     return render_to_response('about.html')
+
+
+def mpower(request):
+    pass
+
+
+def client_stats(request):
+    return render_to_response('funds/client/stats.html')
+
+
+@csrf_exempt
+def get_graph(request):
+    import datetime
+    import time
+
+    month_vouchers = Voucher.objects.filter(date_used__month=datetime.date.today().month).order_by('date_used')
+    #handle same day contributions
+    data_points = []
+    value_pairs = []
+    for v in month_vouchers:
+        value_pairs.append((int(v.value), str(v.date_used +datetime.timedelta(1))))
+    import itertools
+    for key, group in itertools.groupby(value_pairs, key=lambda x: x[1][:11]):
+        sum = 0
+        for element in group:
+            sum += element[0]
+        date_list = str(key).split('-')
+        data_points.append([int(time.mktime(datetime.datetime.strptime(
+            date_list[2] + '/' + date_list[1] + '/' + date_list[0],
+            "%d/%m/%Y").timetuple())) * 1000, sum])
+    data = {
+        "rangeSelector": {"selected": 1},
+        "title": {"text": "Contribution for this month"},
+        "series": [
+            {"name": "series name", "color": "green", "data": data_points, "tooltip": {"valueDecimals": 2}}
+        ]
+    }
+    import json
+
+    data = json.dumps(data)
+    return HttpResponse(data, content_type='application/json')

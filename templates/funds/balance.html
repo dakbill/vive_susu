@@ -1,27 +1,31 @@
 {% extends 'layout/base.html' %}
-
+{%load humanize %}
 {% block content %}
     <div class="row">
+        <h1>Monthly Vive statement</h1>
         <table class="table table-bordered">
             <tr><td class="col-lg-2">Account name:</td><td>{{ member.name }}</td></tr>
             <tr><td>Account number:</td><td>{{ member.account.acc_num }}</td></tr>
-            <tr><td>Balance brought forward:</td><td>{{ member.account.balance }}</td></tr>
+            <tr><td>Balance brought forward:</td><td>&#8373;{{ last_month_savings|floatformat:2|intcomma }}</td></tr>
         </table>
 
         <table class="table">
             <thead>
-                <tr><td>Date</td><td>Deposit</td><td>Balance</td></tr>
+                <tr><td class="col-lg-3">Date</td><td class="col-lg-4">Deposit</td><td>Updated Balance</td></tr>
             </thead>
         </table>
         <div style="height: 200px;overflow-y: scroll">
             <table class="table table-bordered">
-                <tbody>
-                <tr><td class="col-lg-3">foo/foo/bar</td><td>foo100</td><td>foo100</td></tr>
+                <tbody >
+                {% for voucher,increment in month_vouchers_and_increments  %}
+                    <tr><td class="col-lg-3">{{ voucher.date_used }}</td><td class="col-lg-4">&#8373;{{ voucher.value|floatformat:2|intcomma }}</td><td>&#8373;{{ increment|floatformat:2|intcomma }}</td></tr>
+                {% endfor %}
+
                 </tbody>
             </table>
         </div>
 
-        <p style="text-align: left" class="pull-right">Current account balance : {{ member.account.balance }}</p>
+        <p style="text-align: left" class="pull-right">Current account balance : &#8373;{{ balance|floatformat:2|intcomma }}</p>
 
 
     </div>

@@ -6,7 +6,7 @@ class Account(models.Model):
     acc_num = models.CharField(max_length=60, unique=True)
     next_of_kin = models.CharField(max_length=150, blank=True)
     next_of_kin_phone = models.CharField(max_length=60, blank=True)
-    balance = models.IntegerField(default=0)
+    balance = models.DecimalField(default=0, decimal_places=2, max_digits=10)
 
     def __unicode__(self):
         return self.acc_num
@@ -14,8 +14,9 @@ class Account(models.Model):
 
 class Voucher(models.Model):
     num = models.CharField(max_length=60, unique=True)
-    value = models.IntegerField(default=0)
+    value = models.DecimalField(default=0, decimal_places=2, max_digits=10)
     used = models.BooleanField(default=False)
+    date_used = models.DateField(blank=True, null=True)
     account = models.ForeignKey(Account, related_name='voucher_account', null=True, blank=True, default=None)
 
     def __unicode__(self):
