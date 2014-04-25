@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" compressed="false" hash="3759124607" />
+  <component name="DataSourceManagerImpl" format="xml" hash="1053173142">
+    <data-source source="LOCAL" name="Django default" uuid="cb220724-10d3-409e-885d-feb591369f1a">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/susu.db</jdbc-url>
+      <libraries />
+    </data-source>
+  </component>
 </project>
 
