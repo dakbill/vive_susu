@@ -42,7 +42,7 @@
             </a>
             <a href="{% url 'vouchers' %}" >
                 <div class="thumbnail col-lg-2 col-lg-offset-1">
-                    <img src="{% static "img/print.png" %}" >
+                    <img src="{% static "img/print.ico" %}" >
                     <div class="caption">
                         Print Vouchers
                     </div>

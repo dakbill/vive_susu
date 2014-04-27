@@ -1,4 +1,5 @@
 from django.http import HttpResponse
+from django.conf import settings
 from django.shortcuts import render_to_response
 from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import redirect
@@ -96,9 +97,20 @@ def vouchers(request):
     vouchers_list = []
     for i in range(1, 10):
         vouchers_list.append(generate_voucher(11))
+    import json
+    f = open(settings.TEMPLATE_DIRS[0] + '/funds/admin/vouchers.json', 'w')
+    f.write(json.dumps(vouchers_list))
+    f.close()
+
     t = loader.get_template('funds/admin/vouchers.html')
     c = Context({'vouchers': vouchers_list, 'title': 'vouchers'})
     return HttpResponse(t.render(c))
+
+def voucher_download(request):
+    fsock = open(settings.TEMPLATE_DIRS[0] + '/funds/admin/vouchers.json', 'r')
+    response = HttpResponse(fsock, mimetype='application/json')
+    response['Content-Disposition'] = "attachment; filename=%s.json" % ('vouchers')
+    return response
 
 
 def send_notifications(request):
